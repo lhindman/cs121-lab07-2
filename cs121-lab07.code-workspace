@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "LabGuide"
+		},
+		{
+			"path": "A1-NumberCounter"
+		},
+		{
+			"path": "A2-NumberStats"
+		},
+		{
+			"path": "A3-BubbleSorter"
+		},
+		{
+			"path": "A4-QuickDraw"
+		},
+		{
+			"path": "A5-Gradebook"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/.placeholder": true
+		}
+	}
+}
