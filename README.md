@@ -87,9 +87,9 @@ Once the methods have been implemented, call the *generateMandelbrotSet()* metho
 <img src="images/mandelbrot-gray.png" alt="Mandelbrot Set with Gray Scale Palette">
 
 ### STOP STOP STOP
-At this point, commit and push your code then take a break. You've earned it!
+Commit and push your code then take a break. You've earned it!  :)
 
-### Color Palette
+### Generating the Color Palette
 Entire books have been written on how to select color palettes to best show off the features of Mandelbrot Sets. In addition, there are many different ways to represent Color. Java Color objects defined using the [RGB color model](https://en.wikipedia.org/wiki/RGB_color_model)where the red, green and blue values are specified using integer values in the range of 0 - 255.  
 
 Java also supports Color objects defined using the [HSB color model](https://en.wikipedia.org/wiki/HSL_and_HSV) where the color is specified as Hue, Saturation and Brightness. Each of these values is specified as a floating point value in the range of 0 to 1. The *Color.getHSBColor(float hue, float saturation, float brightness)* returns a Color object based upon the specified values. 
