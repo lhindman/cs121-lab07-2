@@ -9,6 +9,7 @@ public class Visualizer {
     public Visualizer(HindmanVisualizer simulation) {
 
         /* Visualization Panel */
+        
         visPanel = new VisualizationPanel(simulation.getDataset(),simulation.getColorPalette());
         visPanel.setPreferredSize(simulation.getDimensions());
 
