@@ -1,12 +1,18 @@
 import java.awt.Color;
 import java.awt.Dimension;
 
+/**
+ * [Add your description here]
+ * @author [Your Name Here]
+ */
 public class Mandelbrot implements HindmanVisualizer {
-    /* Instance Variables */
+    /* Instance Variables (and constants) */
 
 
     /* Constructor */
 
+
+    /* Private Helper Methods */
 
 
     /* Interface Methods */
