@@ -1,8 +1,14 @@
 # Module 7 Lab Guide (part 2)
 
-## Lab Activity 2 - NumberCounter
+## Lab Activity 2 - Mandelbrot
+First some background on the Mandelbrot set, please watch [Mandelbrot Sets Back to Basics by Numberphile](https://youtu.be/FFftmWSzgmk) before proceeding with this Lab.
+
 ### Problem Description
-Design and implement an application that reads an arbitrary number of integers that are in the range 0 to 50 inclusive and counts how many occurrences of each are entered. After all input has been processed, print all of the values (with the number of occurrences) that were entered one or more times. User input must be validated and invalid input should be handled gracefully.
+Generating a Mandelbrot set is a classic Computer Science and Mathematics exercise that we are going to use to demonstrate arrays.  In this activity you will write an application that generates a Mandelbrot set in a two dimensional array of integer values. Each location within the two dimensional array represents a pixel on the display panel with the value at index [0][0] representing the upper left corner of the panel and index [numRows - 1] [numCols - 1] representing the pixel in the lower right corner of the panel. The value stored at each index represents the number of iterations of the Mandelbrot equation before that cell "fell" out of the set. 
+
+Having a two dimensional array of integer values, is great, but not very useful.  In order to visualize this Mandelbrot set, you will need to provide a color palette that will map a given number of iterations to a Color. To do this you will write a function that will generate an array of Color objects where the objects sorted at index [0] will be the Color to use for 0 iterations, index [1] will be the Color to use for 1 iterations, and so forth up to index [MAX_ITERATIONS -1] which should be the Color black.
+
+
 
 ### Implementation Guide
 1. Expand the folder named A1-NumberCounter and create a new file named NumberCounter.java
@@ -11,27 +17,6 @@ Design and implement an application that reads an arbitrary number of integers t
 4. Commit the changes to your local repository with a message stating that Activity 1 is completed.
 5. Push the changes from your local repository to the github classroom repository.
 
-## Lab Activity 3 - NumberStats
-### Problem Description
-Design and implement an application that creates a histogram that allows you to visually inspect the frequency distribution of a set of values. The program should read in an arbitrary number of integers that are in the range of 1 to 100 inclusive; then it should produce a chart similar to the following on that indicates how many input values fell in the range 1 to 10, 11 to 20, and so on. Print one asterisk for each value entered.
-
-     1 - 10   | *****  
-    11 - 20   | **  
-    21 - 30   | *************************  
-    31 - 40   |   
-    41 - 50   | ***  
-    51 - 60   | *******  
-    61 - 70   | **  
-    71 - 80   | *****  
-    81 - 90   | *******  
-    91 - 100  | *********  
-
-### Implementation Guide
-1. Expand the folder named A2-NumberStats and create a new file named NumberStats.java
-2. Design a program to satisfy the requirements in the Problem Description and enter the program code in NumberStats.java
-3. Test the program and pay particular attention to boundary/edge cases and invalid input.
-4. Commit the changes to your local repository with a message stating that Activity 2 is completed.
-5. Push the changes from your local repository to the github classroom repository.
 
 ## Coding Journal (Optional)
 Keep a journal of your activities as you work on this lab. Many of the best engineers that I have worked with professionally have kept some sort of engineering journal. I personally packed notebooks around with me for nearly 8 years before I began keeping my notes electronically.   
