@@ -43,7 +43,7 @@ Please carefully read the javadoc comments provided in HindmanVisualizer.java to
 
 #### Private Helper Methods
 Use the following pseudocode algorithm to generate the Mandelbrot set and store the values in the two dimensional simulation data array. It will be convent to implement this algorithm as two private helper methods with the following signatures
-- private int mendelbrot(double x0, double y0) {...}
+- private int mandelbrot(double x0, double y0) {...}
 - private void generateMandelbrotSet() {...}  
 
 **NOTE:** As you implement these functions, pay particular attention to the variable data types. They will be either *int* or *double* variables and should **NOT** require any casts aside from those specifically included in the algorithm.
