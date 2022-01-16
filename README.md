@@ -86,6 +86,11 @@ Once the methods have been implemented, call the *generateMandelbrotSet()* metho
 
 <img src="images/mandelbrot-gray.png" alt="Mandelbrot Set with Gray Scale Palette">
 
+### STOP STOP STOP
+At this point, commit and push your code then take a break. You've earned it!
+
+
+
 ### Implementation Guide
 1. Expand the folder named Mandelbrot and open the file named Mandelbrot.java
 2. Design a program to satisfy the requirements in the Problem Description and the Program Design above
