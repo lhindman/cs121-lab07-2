@@ -46,7 +46,7 @@ Use the following pseudocode algorithm to generate the Mandelbrot set and store 
 - private int mendelbrot(double x0, double y0) {...}
 - private void generateMandelbrotSet() {...}  
 
-NOTE: As you implement these functions, pay particular attention to the variable data types. They will be either *int* or *double* variables and should NOT require any casts aside from those specifically included in the algorithm.
+**NOTE:** As you implement these functions, pay particular attention to the variable data types. They will be either *int* or *double* variables and should **NOT** require any casts aside from those specifically included in the algorithm.
 
 ```
 function int mandelbrot( x0, y0):
