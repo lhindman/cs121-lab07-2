@@ -94,6 +94,10 @@ Entire books have been written on how to select color palettes to best show off 
 
 Java also supports Color objects defined using the [HSB color model](https://en.wikipedia.org/wiki/HSL_and_HSV) where the color is specified as Hue, Saturation and Brightness. Each of these values is specified as a floating point value in the range of 0 to 1. The *Color.getHSBColor(float hue, float saturation, float brightness)* returns a Color object based upon the specified values. 
 
+#### Interface Methods
+Please carefully read the javadoc comments provided in HindmanVisualizer.java to be certain you understand the required functionity of each method then do the following
+- Update the *getColorPalette()* method to return a reference to the instance variable containing the color palette. The visualize will now use this data instead of the gray scale palette to visualize the Mandelbrot set.
+
 #### Private Helper Methods
 Use the following pseudocode algorithm to generate the color palette and store the values in the single dimensional color palette array. It will be convent to implement this algorithm as a private helper method with the following signature
 - private void generateColorPalette() {...}
@@ -105,11 +109,13 @@ function void generateColorPalette():
             saturation = 255
             brightness = 255
 
-            palette[x] = Color.getHSBColor(hue/255f, saturation/255f, brightness/255f);
+            palette[x] = Color.getHSBColor(hue/255f, saturation/255f, brightness/255f)
 
-        /* Overwrite 
-        palette[palette.length-1] = Color.BLACK;
+        palette[MAX_ITERATIONS] = Color.BLACK
 ```
+Once the method has been implemented, call the *generateColorPalette()* method from the constructor, then run the program. If the mandelbrot functions are implemented correctly, they should generate a color image of the Mandelbrot set exactly as shown below
+
+<img src="images/mandelbrot-color.png" alt="Mandelbrot Set with HSB Color Palette">
 
 ### Implementation Guide
 1. Expand the folder named Mandelbrot and open the file named Mandelbrot.java
