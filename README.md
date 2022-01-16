@@ -90,9 +90,9 @@ Once the methods have been implemented, call the *generateMandelbrotSet()* metho
 Commit and push your code then take a break. You've earned it!  :)
 
 ### Generating the Color Palette
-Entire books have been written on how to select color palettes to best show off the features of Mandelbrot Sets. In addition, there are many different ways to represent Color. Java Color objects defined using the [RGB color model](https://en.wikipedia.org/wiki/RGB_color_model)where the red, green and blue values are specified using integer values in the range of 0 - 255.  
+Entire books have been written on how to select color palettes to best show off the features of Mandelbrot Sets. In addition, there are many different ways to represent Color. Java Color objects are defined using the [RGB color model](https://en.wikipedia.org/wiki/RGB_color_model) where the red, green and blue values are specified using integer values in the range of 0 - 255.  
 
-Java also supports Color objects defined using the [HSB color model](https://en.wikipedia.org/wiki/HSL_and_HSV) where the color is specified as Hue, Saturation and Brightness. Each of these values is specified as a floating point value in the range of 0 to 1. The *Color.getHSBColor(float hue, float saturation, float brightness)* returns a Color object based upon the specified values. 
+Java also supports Color objects defined using the [HSB color model](https://en.wikipedia.org/wiki/HSL_and_HSV) where the color is specified as Hue, Saturation and Brightness. Each of these values is specified as a floating point value in the range of 0 to 1. The *Color.getHSBColor(float hue, float saturation, float brightness)* static method returns a Color object based upon the specified values. 
 
 #### Interface Methods
 Please carefully read the javadoc comments provided in HindmanVisualizer.java to be certain you understand the required functionity of each method then do the following
@@ -123,7 +123,7 @@ Once the method has been implemented, call the *generateColorPalette()* method f
 1. Expand the folder named Mandelbrot and open the file named Mandelbrot.java
 2. Design a program to satisfy the requirements in the Problem Description and the Program Design above
 3. Test the program and pay particular attention to boundary/edge cases and invalid input.
-4. Commit the changes to your local repository with a message stating that Activity 1 is completed.
+4. Commit the changes to your local repository with a message stating that Activity 2 is completed.
 5. Push the changes from your local repository to the github classroom repository.
 
 
