@@ -102,9 +102,11 @@ Please carefully read the javadoc comments provided in HindmanVisualizer.java to
 Use the following pseudocode algorithm to generate the color palette and store the values in the single dimensional color palette array. It will be convent to implement this algorithm as a private helper method with the following signature
 - private void generateColorPalette() {...}
 
+**NOTE:** As you implement these functions, pay particular attention to the variable data types. They will be either *int* or *float* variables and should **NOT** require any casts aside from those specifically included in the algorithm.
+
 ```
 function void generateColorPalette():
-        for (int x = 0; x < palette.length; x++):
+        for (x = 0; x < palette.length; x++):
             hue = 255 * (x / (float) MAX_ITERATIONS)
             saturation = 255
             brightness = 255
