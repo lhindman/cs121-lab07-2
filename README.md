@@ -6,7 +6,9 @@ First some background on the Mandelbrot set, please watch [Mandelbrot Sets Back 
 ### Problem Description
 Generating a Mandelbrot set is a classic Computer Science and Mathematics exercise that we are going to use to demonstrate arrays.  In this activity you will write an application that generates a Mandelbrot set in a two dimensional array of integer values. Each location within the two dimensional array represents a pixel on the display panel with the value at index [0][0] representing the upper left corner of the panel and index [numRows - 1] [numCols - 1] representing the pixel in the lower right corner of the panel. The value stored at each index represents the number of iterations of the Mandelbrot equation before that cell "fell" out of the set. 
 
-Having a two dimensional array of integer values, is great, but not very useful.  In order to visualize this Mandelbrot set, you will need to provide a color palette that will map a given number of iterations to a Color. To do this you will write a function that will generate an array of Color objects where the objects sorted at index [0] will be the Color to use for 0 iterations, index [1] will be the Color to use for 1 iterations, and so forth up to index [MAX_ITERATIONS -1] which should be the Color black.
+Having a two dimensional array of integer values, is great, but not very useful.  In order to visualize this Mandelbrot set, you will need to provide a color palette that will map a given number of iterations to a Color. To do this you will write a function that will generate an array of Color objects where the objects stored at index [0] will be the Color to use for 0 iterations, index [1] will be the Color to use for 1 iterations, and so on up to index [MAX_ITERATIONS -1] which will be the Color black. The image below shows the Mandelbrot set we will be generating in this activity.
+
+
 
 
 
