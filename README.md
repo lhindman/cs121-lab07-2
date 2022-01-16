@@ -10,7 +10,7 @@ Having a two dimensional array of integer values, is great, but not very useful.
 
 <img src="images/mandelbrot-color.png" alt="Mandelbrot Set with HSB Color Palette">
 
-You will use the provided Visualizer class to display your Mandelbrot set on the screen. In Module 8 you will learn about all the GUI components used in this class, but for now you can simply use it.  In order to use it, you will need to provide a class that implements the HindmanVisualizer interface.  You'll find all the required information in the next section. :)
+You will use the provided Visualizer class to display your Mandelbrot set on the screen. In Module 8 you will learn about all the GUI components used in this class, but for now you can simply use it.  In order to use it, you will need to provide a class that implements the HindmanVisualizer interface. The **DataVisualizerDemo** Example in the [Module 7 Guided Experimentation Activity](https://github.com/lhindman/cs121-mod07-examples) demonstrates a class that implements the HindmanVisualizer interfaces and uses the Visualizer class to display a two dimensional dataset.
 
 ### Program Design
 
