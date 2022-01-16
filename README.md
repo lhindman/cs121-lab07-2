@@ -10,11 +10,17 @@ Having a two dimensional array of integer values, is great, but not very useful.
 
 <img src="images/mandelbrot-color.png" alt="Mandelbrot Set with HSB Color Palette">
 
+You will use the provided Visualizer class to display your Mandelbrot set on the screen. In Module 8 you will learn about all the GUI components used in this class, but for now you can simply use it.  In order to use it, you will need to provide a class that implements the HindmanVisualizer interface.  You'll find all the required information in the next section. :)
+
+### Program Design
+
+
+
 <img src="images/mandelbrot-gray.png" alt="Mandelbrot Set with Gray Scale Palette">
 
 ### Implementation Guide
-1. Expand the folder named A1-NumberCounter and create a new file named NumberCounter.java
-2. Design a program to satisfy the requirement in the Problem Description and enter the program code in NumberCounter.java
+1. Expand the folder named Mandelbrot and open the file named Mandelbrot.java
+2. Design a program to satisfy the requirements in the Problem Description and the Program Design above
 3. Test the program and pay particular attention to boundary/edge cases and invalid input.
 4. Commit the changes to your local repository with a message stating that Activity 1 is completed.
 5. Push the changes from your local repository to the github classroom repository.
