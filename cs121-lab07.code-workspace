@@ -4,19 +4,10 @@
 			"path": "LabGuide"
 		},
 		{
-			"path": "A1-NumberCounter"
+			"path": "Mandelbrot"
 		},
 		{
-			"path": "A2-NumberStats"
-		},
-		{
-			"path": "A3-BubbleSorter"
-		},
-		{
-			"path": "A4-QuickDraw"
-		},
-		{
-			"path": "A5-Gradebook"
+			"path": "CodingJournal"
 		}
 	],
 	"settings": {
