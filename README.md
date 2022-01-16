@@ -4,19 +4,19 @@
 First some background on the Mandelbrot set, please watch [Mandelbrot Sets Back to Basics by Numberphile](https://youtu.be/FFftmWSzgmk) before proceeding with this Lab.
 
 ### Problem Description
-Generating a Mandelbrot set is a classic Computer Science and Mathematics exercise that we are going to use to demonstrate arrays.  In this activity you will write an application that generates a Mandelbrot set in a two dimensional array of integer values. Each location within the two dimensional array represents a pixel on the display panel with the value at index [0][0] representing the upper left corner of the panel and index [numRows - 1] [numCols - 1] representing the pixel in the lower right corner of the panel. The value stored at each index represents the number of iterations of the Mandelbrot equation before that cell "fell" out of the set. 
+Generating a Mandelbrot set is a classic Computer Science and Mathematics exercise that we are going to use to demonstrate arrays.  In this activity you will write an application that generates a Mandelbrot set in a two dimensional array of integer values. Each location within the two dimensional array represents a pixel on the display panel with the value at index *[0][0]* representing the upper left corner of the display and index *[numRows - 1]* *[numCols - 1]* representing the pixel in the lower right corner of the display. The value stored at each index represents the number of iterations of the Mandelbrot equation before that cell "fell" out of the set. 
 
-Having a two dimensional array of integer values, is great, but not very useful.  In order to visualize this Mandelbrot set, you will need to provide a color palette that will map a given number of iterations to a Color. To do this you will write a function that will generate an array of Color objects where the objects stored at index [0] will be the Color to use for 0 iterations, index [1] will be the Color to use for 1 iterations, and so on up to index [MAX_ITERATIONS -1] which will be the Color black. The image below shows the Mandelbrot set we will be generating in this activity.
+Having a two dimensional array of integer values, is great, but not very useful.  In order to visualize this Mandelbrot set, you will need to provide a color palette that will map a given number of iterations to a **Color** object. To do this you will write a function that will generate an array of **Color** objects where the objects stored at index *[0]* will be the **Color** to use for 0 iterations, index *[1]* will be the **Color** to use for 1 iteration, and so on up to index *[MAX_ITERATIONS]* which will be the **Color** black. The image below shows the Mandelbrot set we will be generating in this activity.
 
 <img src="images/mandelbrot-color.png" alt="Mandelbrot Set with HSB Color Palette">
 
-You will use the provided Visualizer class to display your Mandelbrot set on the screen. In Module 8 you will learn about all the GUI components used in this class, but for now you can simply use it.  In order to use it, you will need to provide a class that implements the HindmanVisualizer interface. The **DataVisualizerDemo** program in the [Module 7 Guided Experimentation Activity](https://github.com/lhindman/cs121-mod07-examples) demonstrates a class that implements the HindmanVisualizer interfaces and uses the Visualizer class to display a two dimensional dataset.
+You will use the provided **Visualizer** class to display your Mandelbrot Set on the screen. In Module 8 you will learn about all the GUI components used in this class, but for now you can simply use it.  In order to use it, you will need to provide a class that implements the HindmanVisualizer interface. The **DataVisualizerDemo** program in the [Module 7 Guided Experimentation Activity](https://github.com/lhindman/cs121-mod07-examples) demonstrates a class that implements the HindmanVisualizer interfaces and uses the **Visualizer** class to display a two dimensional dataset.
 
 ### Program Design
-Please open Mandelbrot.java.  You'll find that the **Mandelbrot** class header already implements the HindmanVisualizer and that the methods required by the interface are already stubbed out. We'll come back to these later.  You'll also notice that the *main()* method has already been implemented to create both a new Mandelbrot() object and a Visualizer() object. We should not need to make any changes to the *main()* method for this activity.
+Please open Mandelbrot.java.  You'll find that the **Mandelbrot** class header already implements the HindmanVisualizer and that the methods required by the interface are already stubbed out. We'll come back to these later.  You'll also notice that the *main()* method has already been implemented to create both a new **Mandelbrot** object and a **Visualizer** object. We should not need to make any changes to the *main()* method for this activity.
 
 #### Instance Variables (and constants)
-The Mandelbrot Set simulation requires a number of fixed values in order to render properly. We will define this values at the top of the **Mandelbrot** class as constants. The standard implementation of the Mandelbrot Set utilized complex numbers with both *REAL* and *IMAGINARY* components. Java does not natively include support for complex data types, so our implementation will treat these as separate values as shown below.
+The Mandelbrot Set simulation requires a number of fixed values in order to render properly. We will define these values at the top of the **Mandelbrot** class as constants. The standard implementation of the Mandelbrot Set utilizes complex numbers with both *REAL* and *IMAGINARY* components. Java does not natively include support for complex data types, so our implementation will treat these as separate values as shown below.
 ```
 private final int DISPLAY_WIDTH = 600;
 private final int DISPLAY_HEIGHT = 400;
@@ -27,12 +27,12 @@ private final double IMAGINARY_START = -1;
 private final double IMAGINARY_END = 1;
 ```
 
-In addition, we will require a two dimensional array of integer values to represent the simulation data and a single dimension array of Color objects to represent the color palette.
+In addition, we will require a two dimensional array of integer values to represent the simulation data and a single dimension array of **Color** objects to represent the color palette.
 
 #### Constructor
 The constructor will need to instantiate the two dimensional simulation data array using *DISPLAY_HEIGHT* for the number of rows and *DISPLAY_WIDTH* for the number of columns. The constructor will also need to instantiate the color palette array using MAX_ITERATIONS+1 for the number of elements.   
 
-We're not done with the constructor yet, but we're done for now. :)
+*We're not done with the constructor yet, but we're done for now. :)*
 
 
 #### Interface Methods
@@ -82,7 +82,7 @@ function void generateMandelbrotSet():
 
 ```  
 
-Once the methods have been implemented, call the *generateMandelbrotSet()* method from the constructor, then run the program. If the mandelbrot functions are implemented correctly, they should generate a gray scale image of the Mandelbrot set exactly as showing in the following image.
+Once the methods have been implemented, call the *generateMandelbrotSet()* method from the constructor, then run the program. If the mandelbrot functions are implemented correctly, they should generate a gray scale image of the Mandelbrot set exactly as shown in the following image.
 
 <img src="images/mandelbrot-gray.png" alt="Mandelbrot Set with Gray Scale Palette">
 
