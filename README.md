@@ -8,9 +8,9 @@ Generating a Mandelbrot set is a classic Computer Science and Mathematics exerci
 
 Having a two dimensional array of integer values, is great, but not very useful.  In order to visualize this Mandelbrot set, you will need to provide a color palette that will map a given number of iterations to a Color. To do this you will write a function that will generate an array of Color objects where the objects stored at index [0] will be the Color to use for 0 iterations, index [1] will be the Color to use for 1 iterations, and so on up to index [MAX_ITERATIONS -1] which will be the Color black. The image below shows the Mandelbrot set we will be generating in this activity.
 
+<img src="images/mandelbrot-color.png" alt="Mandelbrot Set with HSB Color Palette">
 
-
-
+<img src="images/mandelbrot-gray.png" alt="Mandelbrot Set with Gray Scale Palette">
 
 ### Implementation Guide
 1. Expand the folder named A1-NumberCounter and create a new file named NumberCounter.java
