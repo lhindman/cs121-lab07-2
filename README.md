@@ -56,7 +56,7 @@ function int mandelbrot( x0, y0):
         iteration = 0
         maxIteration = MAX_ITERATIONS
 
-        while (x * x + y * y <= 2 * 2 AND iteration < maxIteration-1):
+        while (x * x + y * y <= 2 * 2 AND iteration < maxIteration):
             xtemp = x * x - y * y + x0
             y = 2 * x * y + y0
             x = xtemp
@@ -89,7 +89,27 @@ Once the methods have been implemented, call the *generateMandelbrotSet()* metho
 ### STOP STOP STOP
 At this point, commit and push your code then take a break. You've earned it!
 
+### Color Palette
+Entire books have been written on how to select color palettes to best show off the features of Mandelbrot Sets. In addition, there are many different ways to represent Color. Java Color objects defined using the [RGB color model](https://en.wikipedia.org/wiki/RGB_color_model)where the red, green and blue values are specified using integer values in the range of 0 - 255.  
 
+Java also supports Color objects defined using the [HSB color model](https://en.wikipedia.org/wiki/HSL_and_HSV) where the color is specified as Hue, Saturation and Brightness. Each of these values is specified as a floating point value in the range of 0 to 1. The *Color.getHSBColor(float hue, float saturation, float brightness)* returns a Color object based upon the specified values. 
+
+#### Private Helper Methods
+Use the following pseudocode algorithm to generate the color palette and store the values in the single dimensional color palette array. It will be convent to implement this algorithm as a private helper method with the following signature
+- private void generateColorPalette() {...}
+
+```
+function void generateColorPalette():
+        for (int x = 0; x < palette.length; x++):
+            hue = 255 * (x / (float) MAX_ITERATIONS)
+            saturation = 255
+            brightness = 255
+
+            palette[x] = Color.getHSBColor(hue/255f, saturation/255f, brightness/255f);
+
+        /* Overwrite 
+        palette[palette.length-1] = Color.BLACK;
+```
 
 ### Implementation Guide
 1. Expand the folder named Mandelbrot and open the file named Mandelbrot.java
