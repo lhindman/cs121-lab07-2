@@ -127,13 +127,3 @@ Once the method has been implemented, call the *generateColorPalette()* method f
 5. Push the changes from your local repository to the github classroom repository.
 
 
-## Coding Journal (Optional)
-Keep a journal of your activities as you work on this lab. Many of the best engineers that I have worked with professionally have kept some sort of engineering journal. I personally packed notebooks around with me for nearly 8 years before I began keeping my notes electronically.   
-
-Your journal can track ideas, bugs, cool links, code snippets, shell commands, rants, or simply a reflection on what worked well or not-so-well with this lab activity. I will not be grading the content of your journal, but I will expect at least two timestamped journal entries of at least a 75 to 150 words each added to the provided Journal.md file.  The purpose of this component is to help develop the habit of taking notes and creating documentation while you code. The more detail you provide the better as that will help you if you ever need to refer back to this project in the future.
-
-## Markdown Resources
-Markdown is a notation that is used to format text documents.  It is widely used in Software Development shops around the world, which is why we're asking you to use it in your lab documentation.  
-
-Github provides a guide for getting started:  [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-
