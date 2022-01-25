@@ -30,6 +30,11 @@ private final double IMAGINARY_END = 1;
 
 In addition, we will require a two dimensional array of integer values to represent the simulation data and a single dimension array of **Color** objects to represent the color palette.
 
+```
+private int[][] simData;
+private Color[] colorPalette;
+```
+
 #### Constructor
 The constructor will need to instantiate the two dimensional simulation data array using *DISPLAY_HEIGHT* for the number of rows and *DISPLAY_WIDTH* for the number of columns. The constructor will also need to instantiate the color palette array using MAX_ITERATIONS+1 for the number of elements.   
 
