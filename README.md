@@ -1,3 +1,4 @@
+![CS121 Banner](images/CS121-BANNER.svg)
 # Module 7 Lab Guide (part 2)
 
 ## Lab Activity 2 - Mandelbrot
